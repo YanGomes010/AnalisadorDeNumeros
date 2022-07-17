@@ -1,0 +1,1 @@
+# Analisador de números baseado em valores inseridos

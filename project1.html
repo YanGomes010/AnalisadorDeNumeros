@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./project.css">
+    <title>Project 01</title>
+    <style>
+        @media screen and (max-width: 730px) {
+            section {
+                width: 450px;
+            }
+            #numeros {
+                width: 100px;
+            }
+        }
+        
+        @media screen and (max-width:480px) {
+            section {
+                width: 310px;
+            }
+            #numeros {
+                width: 70px;
+            }
+            #select {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <h1>ANALISE DE NUMEROS</h1>
+            <p>
+                Número de 0 a 9:
+                <input type="number" id="numeros" max="9" min="1">
+                <input type="submit" value="Adicionar" id="adicionar">
+            </p>
+            <select name="select" id="select" size="10"></select>
+            <input type="submit" id="finalizar" value="Finalizar">
+            <div class="resultados"></div>
+        </section>
+    </div>
+    <script src="./project1 .js"></script>
+</body>
+
+</html>
