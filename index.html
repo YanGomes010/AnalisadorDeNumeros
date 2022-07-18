@@ -22,10 +22,19 @@
                 width: 310px;
             }
             #numeros {
-                width: 70px;
+                width: 120px;
+                padding: 6px;
             }
             #select {
                 width: 150px;
+            }
+            #adicionar {
+                display: block;
+                margin-left: 221px;
+                margin-top: 5px;
+            }
+            #finalizar {
+                margin-left: 89px;
             }
         }
     </style>
@@ -37,10 +46,11 @@
             <h1>ANALISE DE NUMEROS</h1>
             <p>
                 Número de 0 a 9:
-                <input type="number" id="numeros" max="9" min="1">
+                <input type="number" id="numeros" max="9" min="1" placeholder="Digite um número">
                 <input type="submit" value="Adicionar" id="adicionar">
             </p>
-            <select name="select" id="select" size="10"></select>
+            <select name="select" id="select" size="10">
+            </select>
             <input type="submit" id="finalizar" value="Finalizar">
             <div class="resultados"></div>
         </section>
