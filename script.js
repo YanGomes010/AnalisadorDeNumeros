@@ -19,8 +19,8 @@ btnAdicionar.addEventListener("click", () => {
     if (numero == array[array.indexOf(numero)]) {
         alert("Número já adicionado")
         inputNumeros.style.borderColor = "3px solid red"
-    } else if (numero > 100 || numero < 1 || numero == 0) {
-        alert("Escolha um número de 1 a 100")
+    } else if (numero > 1000 || numero < 1 || numero == 0) {
+        alert("Escolha um número de 1 a 1000")
         inputNumeros.style.border = "3px solid red"
     } else {
 
@@ -38,6 +38,10 @@ btnAdicionar.addEventListener("click", () => {
 })
 
 btnFinalizar.addEventListener("click", () => {
+    //Desligando botão 
+
+
+    btnFinalizar.setAttribute("disabled", "disabled")
 
     // iniciando as variaveis para imprimir na tela
     let soma = 0;
